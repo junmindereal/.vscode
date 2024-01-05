@@ -1,0 +1,99 @@
+{
+  //workbench
+  "workbench.colorTheme": "Rosé Pine (no italics)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": "single",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.colorCustomizations": {
+    "[Rosé Pine (no italics)]": {
+      "editorSuggestWidget.selectedBackground": "#faf4ed",
+      "editorSuggestWidget.selectedForeground": "#575279",
+      "editorSuggestWidget.focusHighlightForeground": "#56949f",
+      "editorSuggestWidget.selectedIconForeground": "#575279",
+      "list.activeSelectionBackground": "#faf4ed",
+      "list.activeSelectionForeground": "#575279",
+      "list.inactiveSelectionBackground": "#faf4ed",
+      "list.inactiveSelectionForeground": "#575279",
+      "list.focusBackground": "#faf4ed",
+      "list.hoverBackground": "#524f67",
+      "gitDecoration.untrackedResourceForeground": "#d7827e",
+      "gitDecoration.modifiedResourceForeground": "#56949f",
+      "gitDecoration.ignoredResourceForeground": "#403d52",
+      "terminalCursor.foreground": "#faf4ed",
+      "terminal.background": "#191724",
+    }
+  },
+
+  //material-icon-theme
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  //editor
+  "editor.fontSize": 16,
+  "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.lightbulb.enabled": false,
+  "editor.hover.enabled": false,
+  "editor.showFoldingControls": "never",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.cursorBlinking": "solid",
+  "editor.matchBrackets": "never",
+  "editor.folding": false,
+  //"editor.cursorWidth": 8,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.renderControlCharacters": false,
+  //"editor.fontLigatures": true,
+  "editor.glyphMargin": false,
+
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  //"git.decorations.enabled": false,
+  //"scm.diffDecorations": "none",
+  "files.insertFinalNewline": true,
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false,
+  
+  "window.titleBarStyle": "native",
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    }
+  },
+  "apc.header": {
+    "height": 36
+  },
+    // Remove unnecessary controls from primary bar and tabs list
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none !important", // Remove primary side bar title
+    ".title-actions": "display: none !important", // Remove primary side bar action icons
+    ".editor-actions": "display: none !important", // Remove editor action icons
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".sidebar": "border: none !important",
+    ".monaco-editor .cursors-layer .cursor": "background-color: #faf4ed",
+    ".panel .composite.title": "visibility: hidden !important",
+    ".quick-input-list-row div": "display: flex !important; align-items: center !important",
+    ".basepanel.bottom": "background-color: #191724 !important",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px" // Align tabs to not overlap window controls when primary bar is hidden
+  },
+}
