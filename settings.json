@@ -5,7 +5,7 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
+  //"workbench.statusBar.visible": false,
   "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
@@ -21,19 +21,23 @@
       "list.inactiveSelectionBackground": "#faf4ed",
       "list.inactiveSelectionForeground": "#575279",
       "list.focusBackground": "#faf4ed",
+      "list.focusForeground": "#575279",
       "list.hoverBackground": "#524f67",
       "gitDecoration.untrackedResourceForeground": "#d7827e",
       "gitDecoration.modifiedResourceForeground": "#56949f",
       "gitDecoration.ignoredResourceForeground": "#403d52",
       "terminalCursor.foreground": "#faf4ed",
       "terminal.background": "#191724",
+      "editor.selectionBackground": "#faf4ed",
+      "editor.selectionForeground": "#575279",
+      "editor.findMatchBackground": "#524f67",
+      "editor.findMatchHighlightBackground": "#403d52"
     }
   },
-
   //material-icon-theme
   "material-icon-theme.hidesExplorerArrows": true,
-
   //editor
+  "editor.lineNumbers": "relative",
   "editor.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.guides.indentation": false,
@@ -50,14 +54,13 @@
   "editor.matchBrackets": "never",
   "editor.folding": false,
   //"editor.cursorWidth": 8,
-  "editor.cursorSmoothCaretAnimation": "on",
+  //"editor.cursorSmoothCaretAnimation": "on",
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.fontFamily": "JetBrains Mono",
   "editor.renderControlCharacters": false,
   //"editor.fontLigatures": true,
   "editor.glyphMargin": false,
-
   "breadcrumbs.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -71,7 +74,6 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.enablePersistentSessions": false,
-  
   "window.titleBarStyle": "native",
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
@@ -83,17 +85,57 @@
   "apc.header": {
     "height": 36
   },
-    // Remove unnecessary controls from primary bar and tabs list
+  // Remove unnecessary controls from primary bar and tabs list
   "apc.stylesheet": {
     ".title-label > h2": "display: none !important", // Remove primary side bar title
     ".title-actions": "display: none !important", // Remove primary side bar action icons
     ".editor-actions": "display: none !important", // Remove editor action icons
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
     ".sidebar": "border: none !important",
-    ".monaco-editor .cursors-layer .cursor": "background-color: #faf4ed",
+    ".monaco-editor .cursors-layer .cursor": "background-color: #faf4ed; color: #575279;",
     ".panel .composite.title": "visibility: hidden !important",
     ".quick-input-list-row div": "display: flex !important; align-items: center !important",
     ".basepanel.bottom": "background-color: #191724 !important",
     ".nosidebar .inline-tabs-placeholder": "width: 75px" // Align tabs to not overlap window controls when primary bar is hidden
   },
+  //vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<CR>"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":set hlsearch!"
+        }
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ]
 }
